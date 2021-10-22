@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/root.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" defer>
+  <title>Finny's Present</title>
+  <link rel="shortcut icon" href="icons/favicon.svg" type="image/svg">
+</head>
+
+<body>
+  <main>
+
+    <header>
+      <h1 id="title">Finny's Present</h1>
+    </header>
+
+    <section>
+      <div id="spotify" class="item pushable" onclick="spotify()">
+        <span class="front">
+          <span class="material-icons">
+            music_note
+          </span>
+          <span>Finny's Spotify Playlist</span>
+        </span>
+      </div>
+
+
+      <div id="tiktok" class="item pushable" onclick="tiktok()">
+        <span class="front">
+          <span class="material-icons">
+            play_circle_outline
+          </span>
+          <span>Best TikTok Sounds Ever</span>
+        </span>
+      </div>
+
+      <div id="youtube" class="item pushable" onclick="youtube()">
+        <span class="front">
+          <span class="material-icons">
+            playlist_play
+          </span>
+          <span>Finny's Comfort Songs</span>
+        </span>
+      </div>
+    </section>
+
+  </main>
+  <script>
+    function spotify() {
+      window.open(
+        'https://open.spotify.com/playlist/7KW6CFtxz09RDoJZZ4H7Er?si=0d592f9e8ce0486b'
+      );
+    }
+
+    function tiktok() {
+      window.open('./tiktok.html');
+    }
+
+    function youtube() {
+      window.open(
+        'https://youtube.com/playlist?list=PLe-gBgoyhmnipdOr1vNoUDLBI85stEbYc'
+      );
+    }
+
+  </script>
+</body>
+
+</html>
